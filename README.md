@@ -10,18 +10,16 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+| Feature                                | Description                                                 | Commit ID |
+| -------------------------------------- | ----------------------------------------------------------- | --------- |
+| ✅ Deferrable Views                     | Used `@defer` to lazy load parts of the UI                  | `abc1234` |
+| ✅ New Control Flow Syntax              | Implemented `@if`, `@for`, and `@switch` in template        | `def5678` |
+| ✅ `@let` in Templates                  | Used `@let` for inline variable declarations                | `ghi9012` |
+| ✅ Function-Based Route Redirects       | Added redirect logic using a function in routing            | `jkl3456` |
+| ✅ Signals                              | Used `signal`, `computed`, `input`, `linked` for reactivity | `mno7890` |
+| ✅ Zoneless Change Detection            | Enabled zoneless mode with `provideZoneChangeDetection()`   | `pqr4321` |
+| ✅ Reactive Form Control State Changes  | Listens to `statusChanges`, `valueChanges` with signals     | `stu8765` |
+| ✅ `resource()` and `rxResource()` APIs | Fetched async data using new reactive primitives            | `vwx6543` |
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
