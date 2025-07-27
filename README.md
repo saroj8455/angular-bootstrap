@@ -11,7 +11,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 
-| Feature                                | Description                                                 | Commit ID |
+| Feature                                | Description                                                 | Commit |
 | -------------------------------------- | ----------------------------------------------------------- | --------- |
 | ✅ Deferrable Views                     | Used `@defer` to lazy load parts of the UI                  | `abc1234` |
 | ✅ New Control Flow Syntax              | Implemented `@if`, `@for`, and `@switch` in template        | `def5678` |
@@ -25,7 +25,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## 📋 Feature Implementation Table
 
-| Feature | Description | Commit ID | Status |
+| Feature | Description | Commit | Status |
 |---------|-------------|-----------|--------|
 | Create Variables and Types | Define and use TypeScript variables and types |  | ✅ |
 | Installing Bootstrap and Icons in Angular | Setup Bootstrap 5 and icons like Font Awesome or Bootstrap Icons |  | ✅ |
