@@ -1,1 +1,139 @@
+$color_1: green;
+$color_2: #555;
+$color_3: #4b5563;
+$font-family_1: var(--font-family);
+
+/* You can add global styles to this file, and also import other style files */
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+/* A elements that don't have a class get default styles */
+/* Make images easier to work with */
+/* Uttility classes */
+/* Remove default margin */
+/* breadcrumb */
+/* fix buy and add to cart same size with responsive manner */
+:root {
+  --color-scheme: var(--dark-mode);
+  --font-family: "Poppins", sans-serif;
+  --fs-300: clamp(0.94rem, calc(0.92rem + 0.08vw), 0.98rem);
+  --fs-400: clamp(1.13rem, calc(1.06rem + 0.33vw), 1.31rem);
+  --fs-500: clamp(1.35rem, calc(1.21rem + 0.69vw), 1.75rem);
+  --fs-600: clamp(1.62rem, calc(1.37rem + 1.24vw), 2.33rem);
+  --fs-700: clamp(1.94rem, calc(1.54rem + 2.03vw), 3.11rem);
+  --fs-800: clamp(2.33rem, calc(1.7rem + 3.15vw), 4.14rem);
+  --fs-900: clamp(2.8rem, calc(1.85rem + 4.74vw), 5.52rem);
+  --clr-primary-300: hsl(219, 76%, 55%);
+  --clr-primary-400: hsl(219, 76%, 40%);
+  --clr-primary-500: hsl(219, 76%, 25%);
+  --clr-secondary-300: hsl(269, 75%, 55%);
+  --clr-secondary-400: hsl(269, 75%, 40%);
+  --clr-secondary-500: hsl(269, 75%, 25%);
+  --clr-accent-300: hsl(358, 72%, 65%);
+  --clr-accent-400: hsl(358, 72%, 50%);
+  --clr-accent-500: hsl(358, 72%, 35%);
+  --no-dark-mode: light;
+  --dark-mode: dark light;
+  // --surface-ground: #f9fafb;
+  --surface-ground: #f9fafb;
+  --surface-ground-dark: #111827;
+  --surface-card: #ffffff;
+  --surface-card-dark: #1f2937;
+}
+* {
+  box-sizing: border-box;
+  &::before {
+    box-sizing: border-box;
+  }
+  &::after {
+    box-sizing: border-box;
+  }
+}
+html {
+  color-scheme: var(--color-scheme);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh !important;
+  font-family: $font-family_1 !important;
+  font-size: var(--fs-300) !important;
+  line-height: 1.5 !important;
+  text-rendering: optimizeSpeed !important;
+  margin: 0 !important;
+  background: var(--surface-ground) !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+h1 {
+  font-weight: var(--fw-700);
+  margin: 0;
+}
+h2 {
+  font-weight: var(--fw-700);
+  margin: 0;
+}
+h3 {
+  font-weight: var(--fw-700);
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: $color_1;
+  text-decoration: none;
+  &:hover {
+    color: $color_2;
+  }
+  &:focus {
+    color: $color_2;
+  }
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+picture {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  width: min(85%, 100% - 2rem);
+  margin-inline: auto;
+}
+h4 {
+  margin: 0;
+}
+p {
+  margin: 0;
+  font-size: var(--fs-400);
+}
+figure {
+  margin: 0;
+}
+blockquote {
+  margin: 0;
+}
+dl {
+  margin: 0;
+}
+dd {
+  margin: 0;
+}
+article {
+  padding: 1rem 0;
+}
+.p-card-title {
+  font-size: var(--fs-200);
+}
+footer {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.p-card {
+  background: var(--surface-card) !important;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
 /* You can add global styles to this file, and also import other style files */
