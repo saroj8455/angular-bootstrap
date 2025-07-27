@@ -27,33 +27,33 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 | Feature | Description | Commit | Status |
 |---------|-------------|-----------|--------|
-| Create Variables and Types | Define and use TypeScript variables and types |  | ✅ |
-| Installing Bootstrap and Icons in Angular | Setup Bootstrap 5 and icons like Font Awesome or Bootstrap Icons |  | ✅ |
-| Data Binding: Interpolation | Use `{{ }}` to bind data from component to template |  | ✅ |
-| Property Binding | Bind HTML element properties using `[property]` syntax |  | ✅ |
-| Two-Way Data Binding | Implement two-way binding using `[(ngModel)]` |  | ✅ |
-| Event Binding | Use `(event)` syntax to handle DOM events |  | ✅ |
-| Directives | Use built-in directives like `ngIf`, `ngFor`, etc. |  | ✅ |
-| API Integration | Fetch data from external APIs using `HttpClient` |  | ✅ |
-| Structural Directives | Use structural directives like `*ngIf`, `*ngFor` with logic |  | ✅ |
-| Service | Create and use Angular services for code reuse and DI |  | ✅ |
-| Interface | Define TypeScript interfaces to type-check models |  | ✅ |
-| Router, RouterOutlet, RouterLink, RouterLinkActive | Configure routes and navigation |  | ✅ |
-| Design a Form | Build a form using template-driven or reactive approach |  | ✅ |
-| Create a Class | Create reusable classes for models or helpers |  | ✅ |
-| Data Binding (again) | Reinforce binding concepts throughout components |  | ✅ |
-| API Integration (again) | Apply API integration across different modules |  | ✅ |
-| Implement OnInit | Use `ngOnInit` lifecycle hook for initialization logic |  | ✅ |
-| Validation | Add form validation (required, minLength, custom validators) |  | ✅ |
-| Reactive Form | Create reactive forms with `FormGroup`, `FormControl` |  | ✅ |
-| API Integration (again) | Integrate multiple endpoints using service methods |  | ✅ |
-| API Integration: POST API | Send form data using POST request |  | ✅ |
-| Validation (again) | Enhance validation with feedback and conditional logic |  | ✅ |
-| Pipes: CapitalPipe, UpperCasePipe, DatePipe, etc. | Use and create custom pipes to transform data |  | ✅ |
-| Async Pipe | Display async data using the `async` pipe |  | ✅ |
-| Constant | Create a constants file for global static data |  | ✅ |
-| Signals | Use Angular 17 signals (`signal`, `computed`, `effect`) |  | ✅ |
-| Reusable Component: Input and Output Properties | Build components that use `@Input()` and `@Output()` |  | ✅ |
+| Create Variables and Types | Define and use TypeScript variables and types |  | ❌ |
+| Installing Bootstrap and Icons in Angular | Setup Bootstrap 5 and icons like Font Awesome or Bootstrap Icons |  | ❌ |
+| Data Binding: Interpolation | Use `{{ }}` to bind data from component to template |  | ❌ |
+| Property Binding | Bind HTML element properties using `[property]` syntax |  | ❌ |
+| Two-Way Data Binding | Implement two-way binding using `[(ngModel)]` |  | ❌ |
+| Event Binding | Use `(event)` syntax to handle DOM events |  | ❌ |
+| Directives | Use built-in directives like `ngIf`, `ngFor`, etc. |  | ❌ |
+| API Integration | Fetch data from external APIs using `HttpClient` |  | ❌ |
+| Structural Directives | Use structural directives like `*ngIf`, `*ngFor` with logic |  | ❌ |
+| Service | Create and use Angular services for code reuse and DI |  | ❌ |
+| Interface | Define TypeScript interfaces to type-check models |  | ❌ |
+| Router, RouterOutlet, RouterLink, RouterLinkActive | Configure routes and navigation |  | ❌ |
+| Design a Form | Build a form using template-driven or reactive approach |  | ❌ |
+| Create a Class | Create reusable classes for models or helpers |  | ❌ |
+| Data Binding (again) | Reinforce binding concepts throughout components |  | ❌ |
+| API Integration (again) | Apply API integration across different modules |  | ❌ |
+| Implement OnInit | Use `ngOnInit` lifecycle hook for initialization logic |  | ❌ |
+| Validation | Add form validation (required, minLength, custom validators) |  | ❌ |
+| Reactive Form | Create reactive forms with `FormGroup`, `FormControl` |  | ❌ |
+| API Integration (again) | Integrate multiple endpoints using service methods |  | ❌ |
+| API Integration: POST API | Send form data using POST request |  | ❌ |
+| Validation (again) | Enhance validation with feedback and conditional logic |  | ❌ |
+| Pipes: CapitalPipe, UpperCasePipe, DatePipe, etc. | Use and create custom pipes to transform data |  | ❌ |
+| Async Pipe | Display async data using the `async` pipe |  | ❌ |
+| Constant | Create a constants file for global static data |  | ❌ |
+| Signals | Use Angular 17 signals (`signal`, `computed`, `effect`) |  | ❌ |
+| Reusable Component: Input and Output Properties | Build components that use `@Input()` and `@Output()` |  | ❌ |
 
 ---
 
