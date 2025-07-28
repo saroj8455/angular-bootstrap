@@ -1,25 +1,110 @@
-
-
 <main>
   <div class="container">
     <div class="row">
       <div class="col-md-6">
         <div class="p-card">
-          <img src="https://miro.medium.com/v2/resize:fit:1000/1*Xkxxps5QCy-sHzcAX8vSdA.png" alt="Angular Bootstrap Logo" class="img-fluid">
+          <img
+            src="https://miro.medium.com/v2/resize:fit:1000/1*Xkxxps5QCy-sHzcAX8vSdA.png"
+            alt="Angular Bootstrap Logo"
+            class="img-fluid"
+          />
         </div>
       </div>
       <div class="col-md-6">
         <div class="p-card">
-        <h2>Welcome to Angular Bootstrap</h2>
+          <!-- <h2>Welcome to Angular Bootstrap</h2>
         <p>This is a simple Angular application using Bootstrap for styling.</p>
         <p>Congratulations! Your app is running. 🎉</p>
-        <button class="btn btn-primary">Click Me</button>
+        <button class="btn btn-primary">Click Me</button> -->
+          <form [formGroup]="userFormGroup" (ngSubmit)="handleSubmit()">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                name="username"
+                formControlName="username"
+                [class.is-valid]="
+                  userFormGroup.get('username')?.touched &&
+                  userFormGroup.get('username')?.valid
+                "
+                [class.is-invalid]="
+                  userFormGroup.get('username')?.touched &&
+                  userFormGroup.get('username')?.invalid
+                "
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                formControlName="email"
+                [class.is-valid]="
+                  userFormGroup.get('email')?.touched &&
+                  userFormGroup.get('email')?.valid
+                "
+                [class.is-invalid]="
+                  userFormGroup.get('email')?.touched &&
+                  userFormGroup.get('email')?.invalid
+                "
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <button type="submit" class="btn btn-info">Create</button>
+          </form>
+          <app-life-cycle-demo></app-life-cycle-demo>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mb-4">
+
+    <div class="form-control pb-4" [formGroup]="searchForm">
+      <input
+        type="text"
+        class="form-control"
+        name="searchTerm"
+        formControlName="searchTerm"
+        id="search"
+        placeholder="Search products..."
+      />
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col" *ngFor="let product of products">
+        <div class="card h-100 shadow-sm">
+          <img
+            [src]="product.thumbnail"
+            class="card-img-top"
+            [alt]="product.title"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ product.title }}</h5>
+            <p class="card-text text-muted">{{ product.description }}</p>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item">Price: ₹{{ product.price }}</li>
+              <li class="list-group-item">
+                Discount: {{ product.discountPercentage }}%
+              </li>
+              <li class="list-group-item">Stock: {{ product.stock }}</li>
+              <li class="list-group-item">Rating: ⭐ {{ product.rating }}</li>
+            </ul>
+            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+          </div>
+          <div class="card-footer bg-white border-0">
+            <small class="text-muted">{{ product.availabilityStatus }}</small>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </main>
-
 
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
